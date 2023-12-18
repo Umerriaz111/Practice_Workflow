@@ -1,7 +1,9 @@
 
 name: "Workflow Practice"
 on:
-  - push
+  - push:
+      branches:
+        - main
 jobs:
   first-job:
     runs-on: ubuntu-latest
