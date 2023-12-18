@@ -1,0 +1,11 @@
+
+name: "Workflow Practice"
+on:
+  - push
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+       - name: "Step1 Running"
+         run: echo " Studying for Devops Quiz " 
+     
