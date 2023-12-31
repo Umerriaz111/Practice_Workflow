@@ -1,7 +1,4 @@
-
-
-
-name: Workflow pratice
+name: First Workflow 
 on:
   push:
     branches:
@@ -10,5 +7,5 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: "Echoing content"
-        run: echo "Hello World from Umer Riaz"
+      - name: "printing content using Github actions"
+        run: echo "Umer Riaz"
