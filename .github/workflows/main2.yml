@@ -18,12 +18,8 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-    - name: Checking out to a repository
-      uses: actions/checkout@v4
-    - name: Printing the content of the file
-      run: cat firstfile.txt
     - name: Executing script
-      run: bash a-simple-script.sh
+      run: echo "hello"
 
   second-job:
     if: ${{ github.event_name == 'pull_request' }}
